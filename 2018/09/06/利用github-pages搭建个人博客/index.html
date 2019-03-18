@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="我的github博客">
 <meta property="og:description" content="使用github pages服务搭建博客的好处有： 全是静态文件，访问速度快；免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；可以随意绑定自己的域名；数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-18T02:34:02.127Z">
+<meta property="og:updated_time" content="2019-03-18T06:21:38.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用github pages搭建个人博客">
 <meta name="twitter:description" content="使用github pages服务搭建博客的好处有： 全是静态文件，访问速度快；免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；可以随意绑定自己的域名；数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；">
@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/me.jpeg" class="js-avatar">
+			<img src="./img/me.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Listen Feng</a></h1>
@@ -99,7 +99,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/me.jpeg" class="js-avatar">
+				<img src="./img/me.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Listen Feng</h1>
@@ -187,6 +187,8 @@
 </li>
 </ul>
 <h2 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h2><pre><code>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。
+本地server成功，部署到GitHub上之后不能显示主题样式
+    更改一下_config.yml文件，其中url和root属性设置为要访问的项目地址，root下面应该设置成【/项目名】
 </code></pre><h2 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h2><p>几个必要条件：</p>
 <ul>
 <li><a href="#jump" target="_self">ssh key配置好</a></li>

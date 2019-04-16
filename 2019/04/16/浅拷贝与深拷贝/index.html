@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://listenfeng.github.io/myblog">
-  <title>Archives | 我的github博客</title>
+  <title>浅拷贝与深拷贝 | 我的github博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="我的github博客">
-<meta property="og:url" content="https://listenfeng.github.io/myblog/archives/index.html">
+  <meta name="description" content="一、数据类型数据分为基本数据类型(String, Number, Boolean, Null, Undefined，Symbol)和对象数据类型。  基本数据类型的特点：直接存储在栈(stack)中的数据 引用数据类型的特点：存储的是该对象在栈中引用，真实的数据存放堆内存里 引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅拷贝与深拷贝">
+<meta property="og:url" content="https://listenfeng.github.io/myblog/2019/04/16/浅拷贝与深拷贝/index.html">
 <meta property="og:site_name" content="我的github博客">
+<meta property="og:description" content="一、数据类型数据分为基本数据类型(String, Number, Boolean, Null, Undefined，Symbol)和对象数据类型。  基本数据类型的特点：直接存储在栈(stack)中的数据 引用数据类型的特点：存储的是该对象在栈中引用，真实的数据存放堆内存里 引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-16T07:38:35.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的github博客">
+<meta name="twitter:title" content="浅拷贝与深拷贝">
+<meta name="twitter:description" content="一、数据类型数据分为基本数据类型(String, Number, Boolean, Null, Undefined，Symbol)和对象数据类型。  基本数据类型的特点：直接存储在栈(stack)中的数据 引用数据类型的特点：存储的是该对象在栈中引用，真实的数据存放堆内存里 引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆">
   
     <link rel="alternative" href="/atom.xml" title="我的github博客" type="application/atom+xml">
   
@@ -138,194 +142,96 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-浅拷贝与深拷贝" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      浅拷贝与深拷贝
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/myblog/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/myblog/2019/04/16/浅拷贝与深拷贝/" class="archive-article-date">
+
+        
+        <a href="/myblog/2019/04/16/浅拷贝与深拷贝/" class="archive-article-date">
   	<time datetime="2019-04-16T07:30:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-16</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog/2019/04/16/浅拷贝与深拷贝/">浅拷贝与深拷贝</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/myblog/2019/04/16/oh-my-zsh/" class="archive-article-date">
-  	<time datetime="2019-04-16T07:04:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog/2019/04/16/oh-my-zsh/">oh my zsh~</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/myblog/2019/03/12/css中的BFC/" class="archive-article-date">
-  	<time datetime="2019-03-12T06:40:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog/2019/03/12/css中的BFC/">css中的BFC</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
+        <h2 id="一、数据类型"><a href="#一、数据类型" class="headerlink" title="一、数据类型"></a>一、数据类型</h2><p>数据分为基本数据类型(String, Number, Boolean, Null, Undefined，Symbol)和对象数据类型。</p>
+<ul>
+<li>基本数据类型的特点：直接存储在栈(stack)中的数据</li>
+<li><p>引用数据类型的特点：存储的是该对象在栈中引用，真实的数据存放堆内存里</p>
+<p>引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆中获得实体。</p>
+</li>
+</ul>
+<h2 id="二、浅拷贝与深拷贝"><a href="#二、浅拷贝与深拷贝" class="headerlink" title="二、浅拷贝与深拷贝"></a>二、浅拷贝与深拷贝</h2><p>深拷贝和浅拷贝是只针对Object和Array这样的引用数据类型的。<br><br>浅拷贝只复制指向某个对象的指针，而不复制对象本身，新旧对象还是共享同一块内存。但深拷贝会另外创造一个一模一样的对象，新对象跟原对象不共享内存，修改新对象不会改到原对象。</p>
+<h2 id="有个问题"><a href="#有个问题" class="headerlink" title="有个问题"></a>有个问题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Object.assign的用法有个思考，举个例子：在vue组件里，我有一个空的表格数据table，分别用两个其他的对象拷贝到这个数据中，实现代码为：</span><br><span class="line">this.table = Object.assign([],this.data1)</span><br><span class="line">this.table = Object.assign([],this.data2)</span><br><span class="line">这种方式既可以保证data2的字段多于data1的字段时，也不会在切换到data1数据时产生脏数据，同样保证视图对数据的及时响应</span><br><span class="line">但</span><br><span class="line">this.table = []</span><br><span class="line">Object.assign(this.table,this.data1)</span><br><span class="line">这种方式不会触发视图的响应</span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><a href="https://juejin.im/post/5b5dcf8351882519790c9a2e" target="_blank" rel="noopener">https://juejin.im/post/5b5dcf8351882519790c9a2e</a></p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/myblog/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/myblog/2018/09/10/webpack是如何打包的（vue版本为1）/" class="archive-article-date">
-  	<time datetime="2018-09-10T09:27:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog/2018/09/10/webpack是如何打包的（vue版本为1）/">webpack是如何打包的（vue版本为1）</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/myblog/2018/09/07/vuejs介绍/" class="archive-article-date">
-  	<time datetime="2018-09-07T12:24:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-07</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/myblog/2019/04/16/oh-my-zsh/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">oh my zsh~</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog/2018/09/07/vuejs介绍/">vuejs介绍</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/myblog/2018/09/06/利用github-pages搭建个人博客/" class="archive-article-date">
-  	<time datetime="2018-09-06T06:40:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/myblog/2018/09/06/利用github-pages搭建个人博客/">利用github pages搭建个人博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -348,8 +254,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
